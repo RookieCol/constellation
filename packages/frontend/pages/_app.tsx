@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import { ThirdwebProvider, embeddedWallet } from "@thirdweb-dev/react";
 import "../styles/globals.css";
+import Layout from "../components/Layout";
 
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
@@ -16,7 +17,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         embeddedWallet()
       ]}
     >
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </ThirdwebProvider>
   );
 }
