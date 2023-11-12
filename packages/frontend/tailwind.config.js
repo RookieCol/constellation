@@ -8,11 +8,12 @@ const config = {
   theme: {
     extend: {
       colors: {
-        green300: "#97d680"
+        green400: "#73c358",
+        green500: "#3f882b"
       }
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 
 export default config

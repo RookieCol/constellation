@@ -1,44 +1,34 @@
 import { ConnectWallet } from "@thirdweb-dev/react";
 import Logo from "./Logo";
+import NavLinks, { NavLinksResponsive } from "./NavLinks";
+import Image from "next/image";
 
 export default function Component() {
 
-    return (
-    <div className=" flex flex-col items-center justify-start">
-      <nav className="bg-gray-800 p-2 rounded-full w-9/12 m-2">
-        <div className="flex items-center justify-around w-full">
-          <Logo />
-          <ul className="flex items-center space-x-2">
-            <li>
-              <a className="text-white" href="#">
-                Home
-              </a>
-            </li>
-            <li>
-              <a className="text-white" href="#">
-                About
-              </a>
-            </li>
-            <li>
-              <a className="text-white" href="#">
-                Services
-              </a>
-            </li>
-            <li>
-              <a className="text-white" href="#">
-                Contact
-              </a>
-            </li>
-          </ul>
-          <ConnectWallet
+  return (
+
+    <nav className="navbar bg-gray-900 lg:mt-4 lg:min-w-fit lg:w-[60%] lg:max-w-[850px] pe-4 ps-4 lg:rounded-full mx-auto flex justify-around">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <Image className="" src={'/images/burger.svg'} alt="bars" width={20} height={20} />
+          </label>
+          <NavLinksResponsive />
+        </div>
+        <Logo />
+      </div>
+      <div className="navbar-center hidden lg:flex">
+        <NavLinks />
+      </div>
+      <div className="navbar-end">
+        <ConnectWallet
           theme={"dark"}
           modalSize={"compact"}
           btnTitle={"Connect Wallet"}
           modalTitleIconUrl={""}
         />
-        </div>
-      </nav>        
-    </div>
+      </div>
+    </nav>
   )
 }
 
