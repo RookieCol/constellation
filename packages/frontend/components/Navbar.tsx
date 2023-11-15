@@ -30,6 +30,9 @@ export default function Component() {
           modalSize={"compact"}
           btnTitle={"Connect Wallet"}
           modalTitleIconUrl={""}
+          style={{
+            borderRadius: "100px"
+          }}
         />
       </div>
     </nav>

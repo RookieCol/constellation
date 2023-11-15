@@ -1,9 +1,15 @@
 import Link from "next/link";
 import { link, links } from "../utils/data";
+import { useRouter } from "next/router";
 
 function NavLink({ text, href }: link): React.ReactElement {
+    const { asPath } = useRouter();
+
+    const isActive = asPath === href;
+
     return (
-        <Link className="hover:text-green500 transition-all" href={href}>
+        <Link className={`hover:text-green500 transition-all ${isActive && "text-green500 pointer-events-none"
+            }`} href={href}>
             <li>
                 {text}
             </li>

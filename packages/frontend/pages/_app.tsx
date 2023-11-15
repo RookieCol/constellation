@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { ThirdwebProvider, embeddedWallet } from "@thirdweb-dev/react";
+import { ThirdwebProvider, embeddedWallet, metamaskWallet } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import Layout from "../components/Layout";
 
@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
       activeChain={activeChain}
       supportedWallets={[
+        metamaskWallet(),
         embeddedWallet()
       ]}
     >
