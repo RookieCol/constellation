@@ -8,7 +8,7 @@ function NavLink({ text, href }: link): React.ReactElement {
     const isActive = asPath === href;
 
     return (
-        <Link className={`hover:text-green500 transition-all ${isActive && "text-green600 pointer-events-none"
+        <Link className={`hover:text-green500 transition-all ${isActive && "opacity-40 pointer-events-none"
             }`} href={href}>
             <li>
                 {text}

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Component() {
   return (
-    <nav className="navbar bg-gray-900 lg:mt-4 lg:min-w-fit lg:w-[60%] lg:max-w-[850px] pe-4 ps-4 lg:rounded-full mx-auto flex justify-around">
+    <nav className="navbar bg-gray-900 lg:min-w-fit lg:w-[60%] lg:max-w-[850px] pe-4 ps-4 lg:rounded-full mx-auto flex justify-around ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">

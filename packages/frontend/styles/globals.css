@@ -15,4 +15,5 @@ body {
 
 body {
   scroll-behavior: smooth;
+  @apply lg:pt-5 bg-slate-800 min-h-screen;
 }
