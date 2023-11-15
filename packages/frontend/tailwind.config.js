@@ -9,7 +9,8 @@ const config = {
     extend: {
       colors: {
         green400: "#73c358",
-        green500: "#3f882b"
+        green500: "#3f882b",
+        green600: "#2b5222"
       }
     },
   },
