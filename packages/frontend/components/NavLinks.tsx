@@ -21,7 +21,7 @@ export function NavLinksResponsive(): React.ReactElement {
     return (
         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-800 text-green400 rounded-box w-52">
             {links.map(item => (
-                <NavLink text={item.text} href={item.href} />
+                <NavLink key={item.text} text={item.text} href={item.href} />
             ))}
         </ul>
     )
@@ -32,7 +32,7 @@ export default function NavLinks(): React.ReactElement {
     return (
         <ul className="hidden lg:flex flex-row items-center gap-3 mx-7 grow font-bold text-green400">
             {links.map(item => (
-                <NavLink text={item.text} href={item.href} />
+                <NavLink key={item.text} text={item.text} href={item.href} />
             ))}
         </ul>
     )
