@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FeedProfileCard(): React.ReactElement {
     return (
-        <div className="md:w-1/4 h-fit bg-gray-900 p-2 rounded-lg sticky top-3">
+        <div className="hidden md:block md:w-1/4 h-fit bg-gray-900 p-2 rounded-lg sticky top-3">
             <div className="space-y-2">
                 <img
                     alt="Profile Picture"
