@@ -5,8 +5,8 @@
   "license": "MIT",
   "workspaces": {
     "packages": [
-      "packages/hardhat",
-      "packages/frontend"
+      "packages/frontend",
+      "packages/hardhat"
     ]
   },
   "scripts": {
