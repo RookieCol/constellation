@@ -31,7 +31,7 @@ export default function TabsSection(): ReactElement {
                     <a
                         key={index}
                         role="tab"
-                        className={`tab text-base-200 ${activeTabIndex === index && 'tab-active active:bg-green500'}`}
+                        className={`tab text-base-200 ${activeTabIndex === index && 'tab-active'}`}
                         onClick={() => handleTabClick(index)}
                     >
                         {tab}
@@ -39,7 +39,7 @@ export default function TabsSection(): ReactElement {
                 ))}
 
             </div>
-            <div style={{ marginTop: "10px" }} className="text-base-100 bg-gray-900 rounded-lg min-h-[200px] grid place-content-center">
+            <div style={{ marginTop: "10px" }} className="text-base-100 bg-gray-900 rounded-lg min-h-[150px] flex justify-center items-center p-2">
                 {tabContent[currentTab]}
             </div>
         </div>

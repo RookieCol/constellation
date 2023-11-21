@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 
 export default function ProfileInfo(): ReactElement {
     return (
-        <div className="lg:col-span-1 space-y-4 bg-gray-900 text-base-100 p-6 rounded-lg shadow-lg lg:relative -top-24">
+        <div className="lg:col-span-1 space-y-4 bg-gray-900 text-base-100 p-6 rounded-lg shadow-lg lg:relative -top-24 h-fit">
             <div className="w-full h-32 flex items-center justify-center">
                 <img
                     alt="Profile Picture"
