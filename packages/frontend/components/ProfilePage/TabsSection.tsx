@@ -31,7 +31,7 @@ export default function TabsSection(): ReactElement {
                     <a
                         key={index}
                         role="tab"
-                        className={`tab text-base-200 ${activeTabIndex === index && 'tab-active'}`}
+                        className={`tab text-base-200 ${activeTabIndex === index && 'tab-active pointer-events-none'}`}
                         onClick={() => handleTabClick(index)}
                     >
                         {tab}
