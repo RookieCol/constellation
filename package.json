@@ -11,7 +11,8 @@
   },
   "scripts": {
     "compile": "yarn workspace hardhat compile",
-    "dev": "yarn workspace frontend dev"
+    "dev": "yarn workspace frontend dev",
+    "test": "yarn workspace hardhat test"
   },
   "packageManager": "yarn@1.22.19"
 }
