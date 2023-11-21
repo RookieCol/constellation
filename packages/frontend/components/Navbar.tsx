@@ -31,7 +31,8 @@ export default function Component() {
           btnTitle={"Connect Wallet"}
           modalTitleIconUrl={""}
           style={{
-            borderRadius: "100px"
+            borderRadius: "100px",
+            backgroundColor: "#73c358"
           }}
         />
       </div>
