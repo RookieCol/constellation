@@ -13,7 +13,10 @@ const config = {
         green600: "#2b5222"
       },
       backgroundImage: {
-        "banner": "url('/images/banner.jpg')",
+        "banner": "url('/images/banner.jpg')"
+      },
+      backgroundColor: {
+        "tapiz": "url('/images/tapiz.jpg')"
       }
     },
   },
